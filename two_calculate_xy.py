@@ -4,8 +4,8 @@ import numpy as np
 import numpy as np
 import openvr
 
-from pythonProject.StereoSGBM_alg.cam_pos_st import hmd_to_world, init_openvr, get_visual_controller_pos
-from pythonProject.StereoSGBM_alg.script_st import move_to_pos
+from cam_pos_st import hmd_to_world, init_openvr, get_visual_controller_pos
+from script_st import move_to_pos
 
 """
 给iou做限制的
