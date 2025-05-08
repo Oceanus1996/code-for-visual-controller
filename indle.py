@@ -29,7 +29,7 @@ def midas_setup():
     transform = transforms.dpt_transform
 
 
-def compare_depth(box1, box2, frame, depth_threshold=1):
+def compare_depth(box1, box2, frame, depth_threshold=15):
     """
     对一帧图像 frame，比较两个框 box1/box2 的平均深度，以及它们的交集平均深度，
     并根据 depth_threshold 决定是否需要移动。
@@ -77,7 +77,9 @@ def compare_depth(box1, box2, frame, depth_threshold=1):
     print("计算平均深度","d1",d1,"d2",d2,"d_inter",d_inter)
 
     # 5) 判断是否需要移动
-    need_move = abs(d1 - d2) > depth_threshold
+    dont_need_move = abs(d1 - d2) <= depth_threshold or d2 >= d1 * 1.2
+    # 然后取反
+    need_move = not dont_need_move
     d_diff = d1 - d2
 
     return {

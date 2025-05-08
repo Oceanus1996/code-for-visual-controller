@@ -4,8 +4,8 @@ import numpy as np
 import numpy as np
 import openvr
 
-from cam_pos_st import hmd_to_world, init_openvr, get_visual_controller_pos
-from script_st import move_to_pos
+from pythonProject.StereoSGBM_alg.cam_pos_st import hmd_to_world, init_openvr, get_visual_controller_pos
+import pythonProject.StereoSGBM_alg.script_st
 
 """
 给iou做限制的
@@ -81,7 +81,7 @@ def move_controller_in_depth_only(distance=0.2):
     #print(f"水平移动目标位置: {new_pos}")
 
     # 5) 发命令
-    move_to_pos(new_pos[0],new_pos[1],new_pos[2])
+    pythonProject.StereoSGBM_alg.script_st.move_to_pos(new_pos[0],new_pos[1],new_pos[2])
     #print("深度移动成功" if success else "深度移动失败")
     return tuple(new_pos)
 
@@ -122,7 +122,7 @@ def move_controller_by_local_direction(x, y, z=0, distance=0.3):
     world_dir /= np.linalg.norm(world_dir)
     # 计算目标位置
     new_pos = pos + world_dir * distance
-    move_to_pos(new_pos[0], new_pos[1], new_pos[2])
+    pythonProject.StereoSGBM_alg.script_st.move_to_pos(new_pos[0], new_pos[1], new_pos[2])
     return tuple(new_pos)
 
 
@@ -186,7 +186,6 @@ def calculate_distance_and_movement(obj1_box, obj2_box, tolerance=40):
         "need_move": need_move,
         "direction_x": direction_x,
         "direction_y": direction_y,
-        "status": "需要拉近" if need_move else "距离合适"
     }
 
     return result
@@ -324,12 +323,21 @@ def move_controller_to_initial_offset(forward_offset=0.7, left_offset=0.2, down_
     print("上向轴 vector:", up_vec.tolist())
     print("合成 offset  :", offset_vec.tolist())
     print("目标位置    :", target_pos.tolist())
-    move_to_pos(target_pos[0],target_pos[1],target_pos[2])
-
+    pythonProject.StereoSGBM_alg.script_st.move_to_pos(target_pos[0],target_pos[1],target_pos[2])
+#
 # if __name__ =="__main__":
 #     init_openvr()
-    #move_controller_by_local_direction(1,1)
-    #move_controller_to_initial_offset()
+#     pythonProject.StereoSGBM_alg.script_st.sphere_random_movement(0,0,0,radius=1, num_movements=10)
+
+    #pythonProject.StereoSGBM_alg.script_st.move_to_pos(-1, 3, -4)
+#
+#     move_controller_to_initial_offset()
+#     move_controller_by_local_direction(3, 0, 0)
+#     move_controller_in_depth_only(0.3)
+#     move_controller_in_depth_only(0.3)
+#     move_controller_in_depth_only(0.3)
+#     move_controller_by_local_direction(1,0,0)
+#     move_controller_by_local_direction(1, 1)
 #     move_controller_by_local_direction(1,1)
-    #move_controller_in_depth_only(0.3)
+
 
