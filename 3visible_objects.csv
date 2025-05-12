@@ -1,0 +1,23 @@
+﻿名称,路径,位置X,位置Y,位置Z,大小X,大小Y,大小Z,合并,文义,文义（英）
+Golf Ball,Golf Ball,0,0.05,-0.75,0.1,0.1,0.1,1,高尔夫球,Golf Ball
+Hole 01,Course/Hole 1/Hole 01,-8,0.000709154,-6.500001,0.1500001,0,0.1500001,2,洞,hole
+Score Board,Course/Hole 1/Score Board,-7.5,-0.09929085,-6,0.4313354,1.1,0.4313354,3,分数板,Score Board
+Hole 02,Course/Hole 2/Hole 02,-5,0.000709154,-6,0.1500001,0,0.1500001,4,洞,hole
+Score Board,Course/Hole 2/Score Board,-6.12,-0.09929085,-5.739,0.5430088,1.1,0.2733784,5,分数板,Score Board
+Hole 03,Course/Hole 3/Hole 03,-3,0.000709154,-3,0.1500002,0,0.1500002,6,洞,hole
+Score Board,Course/Hole 3/Score Board,-3,-0.09929085,-2.25,0.3086605,1.1,0.5246153,7,分数板,Score Board
+Hole 04,Course/Hole 4/Hole 04,1.65,0.000709154,-6,0.1500001,0,0.1500001,8,洞,hole
+Score Board,Course/Hole 4/Score Board,2.07,-0.09929085,-5.240001,0.5367734,1.1,0.2860193,9,分数板,Score Board
+Hole 05,Course/Hole 5/Hole 05,6,0.000709154,-6,0.1500002,0,0.1500002,10,洞,hole
+Score Board,Course/Hole 5/Score Board,4.891298,-0.09929085,-5.337124,0.4424706,1.1,0.4198837,11,分数板,Score Board
+Hole 06,Course/Hole 6/Hole 06,7,0.000709154,-2,0.1500002,0,0.1500002,12,洞,hole
+Score Board,Course/Hole 6/Score Board,5.55,-0.09929085,-2.71,0.4198837,1.1,0.4424708,13,分数板,Score Board
+Hole 07,Course/Hole 7/Hole 07,4,0.1227092,2,0.1500001,0,0.1500001,14,洞,hole
+Score Board,Course/Hole 7/Score Board,3.25,-0.09929085,2.25,0.3523369,1.1,0.4972272,15,分数板,Score Board
+Hole 08,Course/Hole 8/Hole 08,6,0.000709154,5.5,0.1500001,0,0.15,16,洞,hole
+Score Board,Course/Hole 8/Score Board,4.928368,-0.09929085,6.235897,0.5361128,1.1,0.2873144,17,分数板,Score Board
+Hole 09,Course/Hole 9/Hole 09,3.25,0.000709154,6,0.1500001,0,0.1500001,18,洞,hole
+Score Board,Course/Hole 9/Score Board,3.5,-0.09929085,5,0.3933334,1.1,0.4660549,19,分数板,Score Board
+Hole 10,Course/Hole 10/Hole 10,-5.5,0.000709154,5,0.1500001,0,0.1500001,20,洞,hole
+Score Board,Course/Hole 10/Score Board,-4.463737,-0.09929085,3.257524,0.3730564,1.1,0.4822016,21,分数板,Score Board
+Final Scoreboard,Props/Final Scoreboard,-9,0,0,0.04999924,1.8,3,22,总计分板,Final Scoreboard
